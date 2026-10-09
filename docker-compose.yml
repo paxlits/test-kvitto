@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite+aiosqlite:///./kvitto.db
+      - WEBHOOK_SECRET=secret_key
