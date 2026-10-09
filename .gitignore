@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Тесты
+.pytest_cache/
+.ruff_cache/
+.coverage
+
+# Окружение и секреты
+.env
+kvitto.db
+*.db
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
